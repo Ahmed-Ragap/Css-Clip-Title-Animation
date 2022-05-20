@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 8rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    font-size: 2em;
+    background: url(./anim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #eee;
+    animation:anima 5s ease-in-out infinite alternate;
+    -webkit-animation:anima 5s ease-in-out infinite alternate;
+}
+@keyframes anima {
+    0%{background-position:30% -100%;}
+    100%{ background-position:0% 140% ;} 
+}
+
+@media(max-width:991px){
+    h1{font-size: 100%;}
+}
